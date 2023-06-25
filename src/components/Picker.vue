@@ -1,5 +1,6 @@
 <template>
   <picker-root
+    ref="pickerRoot"
     :type="type"
     :text="input"
     @select="$emit('select', $event)"
@@ -11,7 +12,7 @@
 /**
  * External dependencies
  */
-import { defineComponent, provide, ref, PropType, toRaw } from 'vue'
+import { defineComponent, provide, ref, PropType, toRaw, VueElement } from 'vue'
 
 /**
  * Internal dependencies
@@ -102,6 +103,7 @@ export default defineComponent({
   },
   emits: ['update:text', 'select'],
   setup(props, { emit }) {
+    const pickerRoot = ref<any>()
     const input = ref(props.text)
 
     /**
@@ -150,6 +152,7 @@ export default defineComponent({
      */
 
     return {
+      pickerRoot,
       type: props.pickerType,
       input,
       onChangeText,

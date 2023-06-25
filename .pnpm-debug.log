@@ -1,0 +1,1423 @@
+{
+  "0 debug pnpm:scope": {
+    "selected": 1
+  },
+  "1 debug pnpm:package-manifest": {
+    "initial": {
+      "name": "vue3-emoji-picker",
+      "version": "1.1.7",
+      "license": "MIT",
+      "author": "delowardev",
+      "repository": {
+        "type": "git",
+        "url": "git+https://github.com/delowardev/vue3-emoji-picker"
+      },
+      "bugs": {
+        "url": "https://github.com/delowardev/vue3-emoji-picker/issues"
+      },
+      "homepage": "https://github.com/delowardev/vue3-emoji-picker/",
+      "keywords": [
+        "vue3-emoji-picker",
+        "emoji-picker",
+        "emoji"
+      ],
+      "files": [
+        "dist"
+      ],
+      "main": "./dist/emoji-picker.umd.js",
+      "module": "./dist/emoji-picker.es.js",
+      "exports": {
+        ".": {
+          "import": "./dist/emoji-picker.es.js",
+          "require": "./dist/emoji-picker.umd.js"
+        },
+        "./css": "./dist/style.css"
+      },
+      "scripts": {
+        "dev": "vite",
+        "build": "vue-tsc --noEmit && vite build",
+        "serve": "vite preview",
+        "prepare": "husky install",
+        "type-check": "vue-tsc --noEmit",
+        "lint": "eslint --ext .ts,.js,.vue ./",
+        "lint:fix": "eslint --fix --ext .ts,.js,.vue ./",
+        "prettier": "prettier -c --ignore-unknown ./src",
+        "prettier:fix": "prettier -c --write --ignore-unknown ./src",
+        "precommit": "npm run type-check && npm run prettier:fix && npm run lint:fix && vite build",
+        "test": "vitest",
+        "test:once": "vitest run",
+        "coverage": "vitest run --coverage"
+      },
+      "devDependencies": {
+        "@babel/types": "^7.15.6",
+        "@types/node": "^16.11.7",
+        "@typescript-eslint/parser": "^5.5.0",
+        "@vitejs/plugin-vue": "^1.2.5",
+        "@vitest/coverage-c8": "^0.24.5",
+        "@vue/compiler-sfc": "^3.0.5",
+        "eslint": "^8.3.0",
+        "eslint-config-prettier": "^8.3.0",
+        "eslint-plugin-vue": "^8.1.1",
+        "husky": "^7.0.4",
+        "lint-staged": ">=10",
+        "prettier": "^2.5.0",
+        "sass": "^1.43.2",
+        "typescript": "^4.3.2",
+        "vite": "^2.4.2",
+        "vitest": "^0.24.5",
+        "vue-eslint-parser": "^8.0.1",
+        "vue-tsc": "^0.0.24"
+      },
+      "lint-staged": {
+        "*.{js,ts,vue}": "npm run lint:fix",
+        "*.{js,ts,css,md,vue}": "npm run prettier:fix"
+      },
+      "dependencies": {
+        "@popperjs/core": "^2.11.0",
+        "idb": "^7.1.0",
+        "vue": "^3.2.23"
+      }
+    },
+    "prefix": "E:\\work\\emoji"
+  },
+  "2 debug pnpm:context": {
+    "currentLockfileExists": false,
+    "storeDir": "E:\\.pnpm-store\\v3",
+    "virtualStoreDir": "E:\\work\\emoji\\node_modules\\.pnpm"
+  },
+  "3 debug pnpm:stage": {
+    "prefix": "E:\\work\\emoji",
+    "stage": "resolution_started"
+  },
+  "4 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@vitejs/plugin-vue/1.10.2",
+    "wanted": {
+      "dependentId": ".",
+      "name": "@vitejs/plugin-vue",
+      "rawSpec": "^1.2.5"
+    }
+  },
+  "5 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@vitejs/plugin-vue/1.10.2",
+    "requester": "E:\\work\\emoji",
+    "status": "resolved"
+  },
+  "6 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/vue-eslint-parser/8.3.0",
+    "wanted": {
+      "dependentId": ".",
+      "name": "vue-eslint-parser",
+      "rawSpec": "^8.0.1"
+    }
+  },
+  "7 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/vue-eslint-parser/8.3.0",
+    "requester": "E:\\work\\emoji",
+    "status": "resolved"
+  },
+  "8 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/vue-eslint-parser/8.3.0",
+    "requester": "E:\\work\\emoji",
+    "status": "found_in_store"
+  },
+  "9 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/@vitejs/plugin-vue/1.10.2",
+    "size": 43042,
+    "status": "started"
+  },
+  "10 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@vitejs/plugin-vue/1.10.2",
+    "requester": "E:\\work\\emoji",
+    "status": "fetched"
+  },
+  "11 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "type": "system",
+      "errno": "ECONNRESET",
+      "code": "ECONNRESET"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/@vitest%2Fcoverage-c8"
+  },
+  "12 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "type": "system",
+      "errno": "ECONNRESET",
+      "code": "ECONNRESET"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/prettier"
+  },
+  "13 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "type": "system",
+      "errno": "ECONNRESET",
+      "code": "ECONNRESET"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/vite"
+  },
+  "14 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "type": "system",
+      "errno": "ECONNRESET",
+      "code": "ECONNRESET"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/eslint-plugin-vue"
+  },
+  "15 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "type": "system",
+      "errno": "ECONNRESET",
+      "code": "ECONNRESET"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/eslint-config-prettier"
+  },
+  "16 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "type": "system",
+      "errno": "ECONNRESET",
+      "code": "ECONNRESET"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/lint-staged"
+  },
+  "17 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "type": "system",
+      "errno": "ECONNRESET",
+      "code": "ECONNRESET"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/vitest"
+  },
+  "18 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "type": "system",
+      "errno": "ECONNRESET",
+      "code": "ECONNRESET"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/@vue%2Fcompiler-sfc"
+  },
+  "19 debug pnpm:request-retry": {
+    "attempt": 1,
+    "error": {
+      "type": "system",
+      "errno": "ECONNRESET",
+      "code": "ECONNRESET"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 10000,
+    "url": "https://registry.npmjs.org/husky"
+  },
+  "20 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/sass/1.63.6",
+    "wanted": {
+      "dependentId": ".",
+      "name": "sass",
+      "rawSpec": "^1.43.2"
+    }
+  },
+  "21 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/sass/1.63.6",
+    "requester": "E:\\work\\emoji",
+    "status": "resolved"
+  },
+  "22 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@babel/types/7.22.5",
+    "wanted": {
+      "dependentId": ".",
+      "name": "@babel/types",
+      "rawSpec": "^7.15.6"
+    }
+  },
+  "23 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/types/7.22.5",
+    "requester": "E:\\work\\emoji",
+    "status": "resolved"
+  },
+  "24 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/sass/1.63.6",
+    "size": 732592,
+    "status": "started"
+  },
+  "25 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/vue-tsc/0.0.24",
+    "wanted": {
+      "dependentId": ".",
+      "name": "vue-tsc",
+      "rawSpec": "^0.0.24"
+    }
+  },
+  "26 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "requester": "E:\\work\\emoji",
+    "status": "resolved"
+  },
+  "27 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/@babel/types/7.22.5",
+    "size": 258620,
+    "status": "started"
+  },
+  "28 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@popperjs/core/2.11.8",
+    "wanted": {
+      "dependentId": ".",
+      "name": "@popperjs/core",
+      "rawSpec": "^2.11.0"
+    }
+  },
+  "29 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@popperjs/core/2.11.8",
+    "requester": "E:\\work\\emoji",
+    "status": "resolved"
+  },
+  "30 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@popperjs/core/2.11.8",
+    "requester": "E:\\work\\emoji",
+    "status": "found_in_store"
+  },
+  "31 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "size": 14921842,
+    "status": "started"
+  },
+  "32 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@babel/types/7.22.5",
+    "requester": "E:\\work\\emoji",
+    "status": "fetched"
+  },
+  "33 debug pnpm:fetching-progress": {
+    "downloaded": 16384,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "34 debug pnpm:fetching-progress": {
+    "downloaded": 32768,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "35 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/eslint/8.43.0",
+    "wanted": {
+      "dependentId": ".",
+      "name": "eslint",
+      "rawSpec": "^8.3.0"
+    }
+  },
+  "36 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/eslint/8.43.0",
+    "requester": "E:\\work\\emoji",
+    "status": "resolved"
+  },
+  "37 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/eslint/8.43.0",
+    "requester": "E:\\work\\emoji",
+    "status": "found_in_store"
+  },
+  "38 debug pnpm:fetching-progress": {
+    "downloaded": 49152,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "39 debug pnpm:fetching-progress": {
+    "downloaded": 63334,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "40 debug pnpm:fetching-progress": {
+    "downloaded": 79718,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "41 debug pnpm:fetching-progress": {
+    "downloaded": 96102,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "42 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/prettier/2.8.8",
+    "wanted": {
+      "dependentId": ".",
+      "name": "prettier",
+      "rawSpec": "^2.5.0"
+    }
+  },
+  "43 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/prettier/2.8.8",
+    "requester": "E:\\work\\emoji",
+    "status": "resolved"
+  },
+  "44 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/prettier/2.8.8",
+    "requester": "E:\\work\\emoji",
+    "status": "found_in_store"
+  },
+  "45 debug pnpm:request-retry": {
+    "attempt": 2,
+    "error": {
+      "type": "system",
+      "errno": "ECONNRESET",
+      "code": "ECONNRESET"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 60000,
+    "url": "https://registry.npmjs.org/@vitest%2Fcoverage-c8"
+  },
+  "46 debug pnpm:fetching-progress": {
+    "downloaded": 112486,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "47 debug pnpm:fetching-progress": {
+    "downloaded": 128870,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "48 debug pnpm:fetching-progress": {
+    "downloaded": 145254,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "49 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/idb/7.1.1",
+    "wanted": {
+      "dependentId": ".",
+      "name": "idb",
+      "rawSpec": "^7.1.0"
+    }
+  },
+  "50 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/idb/7.1.1",
+    "requester": "E:\\work\\emoji",
+    "status": "resolved"
+  },
+  "51 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/idb/7.1.1",
+    "requester": "E:\\work\\emoji",
+    "status": "found_in_store"
+  },
+  "52 debug pnpm:fetching-progress": {
+    "downloaded": 161638,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "53 debug pnpm:fetching-progress": {
+    "downloaded": 178022,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "54 debug pnpm:fetching-progress": {
+    "downloaded": 194406,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "55 debug pnpm:request-retry": {
+    "attempt": 2,
+    "error": {
+      "type": "system",
+      "errno": "ECONNRESET",
+      "code": "ECONNRESET"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 60000,
+    "url": "https://registry.npmjs.org/eslint-plugin-vue"
+  },
+  "56 debug pnpm:request-retry": {
+    "attempt": 2,
+    "error": {
+      "type": "system",
+      "errno": "ECONNRESET",
+      "code": "ECONNRESET"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 60000,
+    "url": "https://registry.npmjs.org/vitest"
+  },
+  "57 debug pnpm:request-retry": {
+    "attempt": 2,
+    "error": {
+      "type": "system",
+      "errno": "ECONNRESET",
+      "code": "ECONNRESET"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 60000,
+    "url": "https://registry.npmjs.org/eslint-config-prettier"
+  },
+  "58 debug pnpm:request-retry": {
+    "attempt": 2,
+    "error": {
+      "type": "system",
+      "errno": "ECONNRESET",
+      "code": "ECONNRESET"
+    },
+    "maxRetries": 2,
+    "method": "GET",
+    "timeout": 60000,
+    "url": "https://registry.npmjs.org/vite"
+  },
+  "59 debug pnpm:fetching-progress": {
+    "downloaded": 210790,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "60 debug pnpm:fetching-progress": {
+    "downloaded": 227174,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "61 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/husky/7.0.4",
+    "wanted": {
+      "dependentId": ".",
+      "name": "husky",
+      "rawSpec": "^7.0.4"
+    }
+  },
+  "62 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/husky/7.0.4",
+    "requester": "E:\\work\\emoji",
+    "status": "resolved"
+  },
+  "63 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/husky/7.0.4",
+    "requester": "E:\\work\\emoji",
+    "status": "found_in_store"
+  },
+  "64 debug pnpm:fetching-progress": {
+    "downloaded": 243558,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "65 debug pnpm:fetching-progress": {
+    "downloaded": 259942,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "66 debug pnpm:fetching-progress": {
+    "downloaded": 276326,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "67 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/sass/1.63.6",
+    "requester": "E:\\work\\emoji",
+    "status": "fetched"
+  },
+  "68 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@vue/compiler-sfc/3.3.4",
+    "wanted": {
+      "dependentId": ".",
+      "name": "@vue/compiler-sfc",
+      "rawSpec": "^3.0.5"
+    }
+  },
+  "69 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@vue/compiler-sfc/3.3.4",
+    "requester": "E:\\work\\emoji",
+    "status": "resolved"
+  },
+  "70 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@vue/compiler-sfc/3.3.4",
+    "requester": "E:\\work\\emoji",
+    "status": "found_in_store"
+  },
+  "71 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/lint-staged/13.2.2",
+    "wanted": {
+      "dependentId": ".",
+      "name": "lint-staged",
+      "rawSpec": ">=10"
+    }
+  },
+  "72 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/lint-staged/13.2.2",
+    "requester": "E:\\work\\emoji",
+    "status": "resolved"
+  },
+  "73 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/lint-staged/13.2.2",
+    "requester": "E:\\work\\emoji",
+    "status": "found_in_store"
+  },
+  "74 debug pnpm:fetching-progress": {
+    "downloaded": 292710,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "75 debug pnpm:fetching-progress": {
+    "downloaded": 309094,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "76 debug pnpm:fetching-progress": {
+    "downloaded": 325478,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "77 debug pnpm:fetching-progress": {
+    "downloaded": 341862,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "78 debug pnpm:fetching-progress": {
+    "downloaded": 358246,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "79 debug pnpm:fetching-progress": {
+    "downloaded": 374630,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "80 debug pnpm:fetching-progress": {
+    "downloaded": 391014,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "81 debug pnpm:fetching-progress": {
+    "downloaded": 407398,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "82 debug pnpm:fetching-progress": {
+    "downloaded": 423782,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "83 debug pnpm:fetching-progress": {
+    "downloaded": 440166,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "84 debug pnpm:fetching-progress": {
+    "downloaded": 456550,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "85 debug pnpm:fetching-progress": {
+    "downloaded": 472934,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "86 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/vue/3.3.4",
+    "wanted": {
+      "dependentId": ".",
+      "name": "vue",
+      "rawSpec": "^3.2.23"
+    }
+  },
+  "87 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/vue/3.3.4",
+    "requester": "E:\\work\\emoji",
+    "status": "resolved"
+  },
+  "88 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/vue/3.3.4",
+    "requester": "E:\\work\\emoji",
+    "status": "found_in_store"
+  },
+  "89 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/@types/node/16.18.36",
+    "wanted": {
+      "dependentId": ".",
+      "name": "@types/node",
+      "rawSpec": "^16.11.7"
+    }
+  },
+  "90 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@types/node/16.18.36",
+    "requester": "E:\\work\\emoji",
+    "status": "resolved"
+  },
+  "91 debug pnpm:fetching-progress": {
+    "downloaded": 489318,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "92 debug pnpm:fetching-progress": {
+    "downloaded": 505702,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "93 debug pnpm:fetching-progress": {
+    "downloaded": 522086,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "94 debug pnpm:fetching-progress": {
+    "downloaded": 538470,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "95 debug pnpm:fetching-progress": {
+    "attempt": 1,
+    "packageId": "registry.npmjs.org/@types/node/16.18.36",
+    "size": 634725,
+    "status": "started"
+  },
+  "96 debug pnpm:fetching-progress": {
+    "downloaded": 554854,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "97 debug pnpm:fetching-progress": {
+    "downloaded": 571238,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "98 debug pnpm:fetching-progress": {
+    "downloaded": 587622,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "99 debug pnpm:fetching-progress": {
+    "downloaded": 604006,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "100 debug pnpm:fetching-progress": {
+    "downloaded": 620390,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "101 debug pnpm:fetching-progress": {
+    "downloaded": 636774,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "102 debug pnpm:fetching-progress": {
+    "downloaded": 653158,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "103 debug pnpm:fetching-progress": {
+    "downloaded": 669542,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "104 debug pnpm:fetching-progress": {
+    "downloaded": 685926,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "105 debug pnpm:fetching-progress": {
+    "downloaded": 702310,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "106 debug pnpm:fetching-progress": {
+    "downloaded": 718694,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "107 debug pnpm:fetching-progress": {
+    "downloaded": 735078,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "108 debug pnpm:fetching-progress": {
+    "downloaded": 751462,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "109 debug pnpm:fetching-progress": {
+    "downloaded": 767846,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "110 debug pnpm:fetching-progress": {
+    "downloaded": 784230,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "111 debug pnpm:fetching-progress": {
+    "downloaded": 800614,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "112 debug pnpm:fetching-progress": {
+    "downloaded": 816998,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "113 debug pnpm:fetching-progress": {
+    "downloaded": 833382,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "114 debug pnpm:fetching-progress": {
+    "downloaded": 849766,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "115 debug pnpm:fetching-progress": {
+    "downloaded": 862054,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "116 debug pnpm:fetching-progress": {
+    "downloaded": 878438,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "117 debug pnpm:fetching-progress": {
+    "downloaded": 894822,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "118 debug pnpm:fetching-progress": {
+    "downloaded": 911206,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "119 debug pnpm:fetching-progress": {
+    "downloaded": 927590,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "120 debug pnpm:fetching-progress": {
+    "downloaded": 943974,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "121 debug pnpm:fetching-progress": {
+    "downloaded": 960358,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "122 debug pnpm:fetching-progress": {
+    "downloaded": 964454,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "123 debug pnpm:fetching-progress": {
+    "downloaded": 972646,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "124 debug pnpm:fetching-progress": {
+    "downloaded": 989030,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "125 debug pnpm:fetching-progress": {
+    "downloaded": 1005414,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "126 debug pnpm:fetching-progress": {
+    "downloaded": 1021798,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "127 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/@types/node/16.18.36",
+    "requester": "E:\\work\\emoji",
+    "status": "fetched"
+  },
+  "128 debug pnpm:fetching-progress": {
+    "downloaded": 1038182,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "129 debug pnpm:fetching-progress": {
+    "downloaded": 1054566,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "130 debug pnpm:fetching-progress": {
+    "downloaded": 1062758,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "131 debug pnpm:fetching-progress": {
+    "downloaded": 1079142,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "132 debug pnpm:fetching-progress": {
+    "downloaded": 1095526,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "133 debug pnpm:fetching-progress": {
+    "downloaded": 1111910,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "134 debug pnpm:fetching-progress": {
+    "downloaded": 1128294,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "135 debug pnpm:fetching-progress": {
+    "downloaded": 1144678,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "136 debug pnpm:fetching-progress": {
+    "downloaded": 1161062,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "137 debug pnpm:fetching-progress": {
+    "downloaded": 1177446,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "138 debug pnpm:fetching-progress": {
+    "downloaded": 1193830,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "139 debug pnpm:fetching-progress": {
+    "downloaded": 1210214,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "140 debug pnpm:fetching-progress": {
+    "downloaded": 1226598,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "141 debug pnpm:fetching-progress": {
+    "downloaded": 1242982,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "142 debug pnpm:fetching-progress": {
+    "downloaded": 1255270,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "143 debug pnpm:fetching-progress": {
+    "downloaded": 1271654,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "144 debug pnpm:fetching-progress": {
+    "downloaded": 1288038,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "145 debug pnpm:fetching-progress": {
+    "downloaded": 1304422,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "146 debug pnpm:fetching-progress": {
+    "downloaded": 1320806,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "147 debug pnpm:fetching-progress": {
+    "downloaded": 1324902,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "148 debug pnpm:fetching-progress": {
+    "downloaded": 1341286,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "149 debug pnpm:fetching-progress": {
+    "downloaded": 1357670,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "150 debug pnpm:fetching-progress": {
+    "downloaded": 1374054,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "151 debug pnpm:fetching-progress": {
+    "downloaded": 1390438,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "152 debug pnpm:fetching-progress": {
+    "downloaded": 1394534,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "153 debug pnpm:fetching-progress": {
+    "downloaded": 1406822,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "154 debug pnpm:fetching-progress": {
+    "downloaded": 1419110,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "155 debug pnpm:fetching-progress": {
+    "downloaded": 1435494,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "156 debug pnpm:fetching-progress": {
+    "downloaded": 1451878,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "157 debug pnpm:fetching-progress": {
+    "downloaded": 1455974,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "158 debug pnpm:fetching-progress": {
+    "downloaded": 1468262,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "159 debug pnpm:fetching-progress": {
+    "downloaded": 1484646,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "160 debug pnpm:fetching-progress": {
+    "downloaded": 1488742,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "161 debug pnpm:fetching-progress": {
+    "downloaded": 1501030,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "162 debug pnpm:fetching-progress": {
+    "downloaded": 1517414,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "163 debug pnpm:fetching-progress": {
+    "downloaded": 1521510,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "164 debug pnpm:fetching-progress": {
+    "downloaded": 1537894,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "165 debug pnpm:fetching-progress": {
+    "downloaded": 1546086,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "166 debug pnpm:fetching-progress": {
+    "downloaded": 1554278,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "167 debug pnpm:fetching-progress": {
+    "downloaded": 1570662,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "168 debug pnpm:fetching-progress": {
+    "downloaded": 1587046,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "169 debug pnpm:fetching-progress": {
+    "downloaded": 1603430,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "170 debug pnpm:fetching-progress": {
+    "downloaded": 1619814,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "171 debug pnpm:fetching-progress": {
+    "downloaded": 1636198,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "172 debug pnpm:fetching-progress": {
+    "downloaded": 1652582,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "173 debug pnpm:fetching-progress": {
+    "downloaded": 1668966,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "174 debug pnpm:fetching-progress": {
+    "downloaded": 1685350,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "175 debug pnpm:fetching-progress": {
+    "downloaded": 1701734,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "176 debug pnpm:fetching-progress": {
+    "downloaded": 1718118,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "177 debug pnpm:fetching-progress": {
+    "downloaded": 1734502,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "178 debug pnpm:fetching-progress": {
+    "downloaded": 1750886,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "179 debug pnpm:fetching-progress": {
+    "downloaded": 1767270,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "180 debug pnpm:fetching-progress": {
+    "downloaded": 1783654,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "181 debug pnpm:fetching-progress": {
+    "downloaded": 1800038,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "182 debug pnpm:fetching-progress": {
+    "downloaded": 1816422,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "183 debug pnpm:fetching-progress": {
+    "downloaded": 1832806,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "184 debug pnpm:fetching-progress": {
+    "downloaded": 1849190,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "185 debug pnpm:fetching-progress": {
+    "downloaded": 1865574,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "186 debug pnpm:fetching-progress": {
+    "downloaded": 1881958,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "187 debug pnpm:fetching-progress": {
+    "downloaded": 1898342,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "188 debug pnpm:fetching-progress": {
+    "downloaded": 1914726,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "189 debug pnpm:fetching-progress": {
+    "downloaded": 1931110,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "190 debug pnpm:fetching-progress": {
+    "downloaded": 1947494,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "191 debug pnpm:fetching-progress": {
+    "downloaded": 1963878,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "192 debug pnpm:fetching-progress": {
+    "downloaded": 1980262,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "193 debug pnpm:fetching-progress": {
+    "downloaded": 1996646,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "194 debug pnpm:fetching-progress": {
+    "downloaded": 2004838,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "195 debug pnpm:fetching-progress": {
+    "downloaded": 2021222,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "196 debug pnpm:fetching-progress": {
+    "downloaded": 2029414,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "197 debug pnpm:fetching-progress": {
+    "downloaded": 2045798,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "198 debug pnpm:fetching-progress": {
+    "downloaded": 2049894,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "199 debug pnpm:fetching-progress": {
+    "downloaded": 2066278,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "200 debug pnpm:fetching-progress": {
+    "downloaded": 2082662,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "201 debug pnpm:fetching-progress": {
+    "downloaded": 2099046,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "202 debug pnpm:fetching-progress": {
+    "downloaded": 2115430,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "203 debug pnpm:fetching-progress": {
+    "downloaded": 2131814,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "204 debug pnpm:fetching-progress": {
+    "downloaded": 2148198,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "205 debug pnpm:fetching-progress": {
+    "downloaded": 2160486,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "206 debug pnpm:fetching-progress": {
+    "downloaded": 2176870,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "207 debug pnpm:fetching-progress": {
+    "downloaded": 2193254,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "208 debug pnpm:fetching-progress": {
+    "downloaded": 2209638,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "209 debug pnpm:fetching-progress": {
+    "downloaded": 2226022,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "210 debug pnpm:fetching-progress": {
+    "downloaded": 2242406,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "211 debug pnpm:fetching-progress": {
+    "downloaded": 2258790,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "212 debug pnpm:fetching-progress": {
+    "downloaded": 2275174,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "213 debug pnpm:fetching-progress": {
+    "downloaded": 2291558,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "214 debug pnpm:fetching-progress": {
+    "downloaded": 2307942,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "215 debug pnpm:fetching-progress": {
+    "downloaded": 2324326,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "216 debug pnpm:fetching-progress": {
+    "downloaded": 2340710,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "217 debug pnpm:fetching-progress": {
+    "downloaded": 2357094,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "218 debug pnpm:fetching-progress": {
+    "downloaded": 2373478,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "219 debug pnpm:fetching-progress": {
+    "downloaded": 2389862,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "220 debug pnpm:fetching-progress": {
+    "downloaded": 2406246,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "221 debug pnpm:fetching-progress": {
+    "downloaded": 2422630,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "222 debug pnpm:fetching-progress": {
+    "downloaded": 2439014,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "223 debug pnpm:fetching-progress": {
+    "downloaded": 2451302,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "224 debug pnpm:fetching-progress": {
+    "downloaded": 2467686,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "225 debug pnpm:fetching-progress": {
+    "downloaded": 2475878,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "226 debug pnpm:fetching-progress": {
+    "downloaded": 2492262,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "227 debug pnpm:fetching-progress": {
+    "downloaded": 2504550,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "228 debug pnpm:fetching-progress": {
+    "downloaded": 2512742,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "229 debug pnpm:fetching-progress": {
+    "downloaded": 2516838,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "230 debug pnpm:fetching-progress": {
+    "downloaded": 2533222,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "231 debug pnpm:fetching-progress": {
+    "downloaded": 2549606,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "232 debug pnpm:fetching-progress": {
+    "downloaded": 2561894,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "233 debug pnpm:fetching-progress": {
+    "downloaded": 2578278,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "234 debug pnpm:fetching-progress": {
+    "downloaded": 2594662,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "235 debug pnpm:fetching-progress": {
+    "downloaded": 2611046,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "236 debug pnpm:fetching-progress": {
+    "downloaded": 2623334,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "237 debug pnpm:fetching-progress": {
+    "downloaded": 2639718,
+    "packageId": "registry.npmjs.org/vue-tsc/0.0.24",
+    "status": "in_progress"
+  },
+  "238 error pnpm": {
+    "code": "ERR_PNPM_META_FETCH_FAIL",
+    "attempts": 1,
+    "spec": {
+      "fetchSpec": ">=0.24.5 <0.25.0-0",
+      "name": "@vitest/coverage-c8",
+      "type": "range"
+    },
+    "pkgsStack": [],
+    "err": {
+      "name": "pnpm",
+      "message": "GET https://registry.npmjs.org/@vitest%2Fcoverage-c8: request to https://registry.npmjs.org/@vitest%2Fcoverage-c8 failed, reason: Client network socket disconnected before secure TLS connection was established",
+      "code": "ERR_PNPM_META_FETCH_FAIL",
+      "stack": "pnpm: GET https://registry.npmjs.org/@vitest%2Fcoverage-c8: request to https://registry.npmjs.org/@vitest%2Fcoverage-c8 failed, reason: Client network socket disconnected before secure TLS connection was established\n    at RetryOperation._fn (C:\\Users\\Administrator\\AppData\\Roaming\\npm\\pnpm-global\\5\\node_modules\\.pnpm\\pnpm@7.0.0\\node_modules\\pnpm\\dist\\pnpm.cjs:84251:19)\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)"
+    }
+  }
+}

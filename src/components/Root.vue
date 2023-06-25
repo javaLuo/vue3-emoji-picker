@@ -9,6 +9,7 @@
         class="v3-emoji-picker-input"
         @input="onChangeText"
         @blur="updateCursor"
+        @focus="onFocus"
       />
       <textarea
         v-else
@@ -17,6 +18,7 @@
         class="v3-emoji-picker-textarea"
         @input="onChangeText"
         @blur="updateCursor"
+        @focus="onFocus"
       />
       <div
         class="v3-input-picker-wrap"
@@ -26,7 +28,7 @@
           ref="button"
           type="button"
           class="v3-input-picker-icon"
-          @click="open = !open"
+          @click="onOpen"
         >
           <img :src="face" alt="" />
         </button>
@@ -106,7 +108,7 @@ export default defineComponent({
       default: () => ({}),
     },
   },
-  emits: ['update:text', 'select'],
+  emits: ['update:text', 'select', 'focus', 'blur'],
   setup(props, { emit }) {
     const elem = ref<HTMLInputElement>()
     const button = ref<HTMLButtonElement>()
@@ -138,12 +140,23 @@ export default defineComponent({
       }
 
       emit('select', emoji)
+      toFocus()
+    }
+
+    function toFocus() {
+      elem.value?.focus()
     }
 
     function updateCursor() {
       if (elem.value) {
         cursor = elem.value?.selectionEnd || -1
       }
+
+      setTimeout(() => {
+        if (!open.value) {
+          emit('blur', open.value)
+        }
+      }, 100)
     }
 
     function clickListener(event: MouseEvent) {
@@ -184,6 +197,17 @@ export default defineComponent({
       emit('update:text', input.value)
     }
 
+    function onFocus() {
+      emit('focus')
+    }
+
+    function onOpen() {
+      open.value = !open.value
+      if (!open.value) {
+        emit('blur', open.value)
+      }
+    }
+
     /**
      * Lifecycle
      */
@@ -211,6 +235,9 @@ export default defineComponent({
       isInputType,
       onChangeText,
       colorTheme,
+      onFocus,
+      onOpen,
+      toFocus,
     }
   },
 })
